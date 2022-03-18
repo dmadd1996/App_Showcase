@@ -4,54 +4,74 @@
   margin: auto;
 }
 
-.body, .h1, .h2, .h3, .h4 {
-  font-family: 'Arial', 'Helvetica', 'sans-serif';
-}
-
 .sidebar {
   height:100%;
-  width:200px;
-  background-color:#fff;
+  width:100px;
+  background-color:;
   position:fixed!important;
   z-index:1;
   overflow:auto;
-  width: 120px;
-  background: #222;
 }
 
-/*.bar-item{
-  padding:8px 16px;
-  float: left;
+@media (min-width:1000px) {
+  .sidebar {display: block!important;}
+  .hide-large {display: none!important}
+}
+
+@media (max-width: 999px) and (min-width: 600px) {
+  .hide-medium {display: none!important}
+}
+
+@media (max-width:999px) {
+  .sidebar {display:none;}
+}
+
+.bar .center {
+  display: inline-block;
   width: auto;
-  border: none;
-  display: block;
-  outline: 0;
-  width: 100%; 
-  padding: 8px 16px; 
-  text-align: left;  
-  white-space: normal; 
-  float: none; 
 }
 
-.bar-block{
-  width:100%;
-  text-align:left;
+.bar .bar-item {
   padding:8px 16px;
-  min-width: 100%;
-}*/
+  float:left;
+  width:auto;
+  border:none;
+  display:block;
+  outline:0
+}
+
+.bar-item .bar-block {
+  width:100%;
+  display:block;
+  padding:8px 16px;
+  text-align:left;
+  border:none;
+  white-space:normal;
+  float:none;
+  outline:0;
+}
+
+.bar-item .bar-block .center {
+  text-align: center;
+}
 
 .small{
   font-size: 12px!important;
 }
 
-/*use for mobile resizing within the @media syntax
+.large{font-size: 42px!important}
 
-.hide-small{
-  display: none!important;
-}*/
+@media (max-width:600px){
+  .hide-small{
+    display: none!important;
+}.bar-item{
+  text-align: center;
+}}
+
+.center {text-align: center!important;}
 
 .button {
-  border:none;
+  border: none;
   display:inline-block;
   padding:8px 16px;
   vertical-align:middle;
@@ -61,21 +81,53 @@
   background-color:inherit;
   text-align:center;
   cursor:pointer;
-  white-space:nowrap;
+}
+
+.button .bar-block {
+  width:100%;
+  text-align:left;
+  padding:8px 16px
+}
+
+.button .bar {white-space: normal;}
+
+.button:hover{
+  color:#000!important;background-color:#ccc!important
 }
 
 .padding-large{
   padding:12px 24px!important
 }
 
-.black{
+.black, .w3-hover-black:hover{
   color:#fff!important;
   background-color:#000!important
 }
 
-.hover-black:hover{
-  color:#fff!important;
-  background-color:#000!important
+
+.top {
+  position:fixed;width:100%;z-index:1; top:0
 }
 
-/*.center {display: inline-block; width: auto;}*/
+.opacity, .hover-opacity:hover {
+  opacity: 0.6;
+}
+
+.opacity-off, .hover-opacity-off:hover {
+  opacity: 1;
+}
+
+.container {
+  padding:0.01em 16px
+}
+
+.padding-32 {
+  padding-top: 32px;
+}
+
+.jumbo{
+  text-align: center; font-size: 64px!important;
+}
+
+/*Needs to have a smaller avatar photo
+.center {display: inline-block; width: auto;}*/

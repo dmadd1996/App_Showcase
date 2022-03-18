@@ -2,39 +2,69 @@
 <html lang="en-us">
     
 <head>
-    <title>Derek's Application Showcase</title>
+  <title>Derek's Application Showcase</title>
+
   <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial scale=1">
-    <link rel="stylesheet" href="./Assets/style.css">
+  <meta name="viewport" content="width=device-width, initial scale=1">
+  <link rel="stylesheet" href="./Assets/style.css">
+  <script src="https://kit.fontawesome.com/7d8e76c08d.js" crossorigin="anonymous"></script>
+  <style>
+    .body, .h1, .h2, .h3, .h4 {
+      font-family: 'Arial', 'Helvetica', 'sans-serif';
+    }
+
+    .row-padding img {margin-bottom: 12px;}
+
+    #main {margin-left: 120px;}
+
+    @media only screen and (max-width: 1000px) {
+      #main {margin-left: 0px; margin-right: 0px;}}
+  </style>
 </head>
 
 <body class="black">
 
-<nav class="sidebar bar-block small hide-small center">
+<!--Nav bar for large screens-->
+<nav class="sidebar bar bar-block small hide-small center">
     <!-- Avatar image in top left corner -->
-    <img src="./Assets/images/Avatar_Test.jpg" style="width:100%">
+    <img src="./Assets/images/avatar_resize.jpg" alt="small boye" style="width:100%">
+    
     <a href="#" class="bar-item button padding-large black">
-      <i class="fa fa-home w3-xxlarge"></i>
+      <i class="fa-solid fa-house large"></i>
       <p class="body">HOME</p>
     </a>
     <a href="#about" class="bar-item button padding-large hover-black">
-      <i class="fa fa-user w3-xxlarge"></i>
-      <p>ABOUT</p>
+      <i class="fa fa-user large"></i>
+      <p class="body">ABOUT</p>
     </a>
     <a href="#photos" class="bar-item button padding-large hover-black">
-      <i class="fa fa-eye w3-xxlarge"></i>
-      <p>PHOTOS</p>
+      <i class="fa-solid fa-bars-progress large"></i>
+      <p class="body">APPS</p>
     </a>
     <a href="#contact" class="bar-item button padding-large hover-black">
-      <i class="fa fa-envelope w3-xxlarge"></i>
-      <p>CONTACT</p>
+      <i class="fa fa-envelope large"></i>
+      <p class="body">CONTACT</p>
     </a>
 </nav>
 
-<div class="w3-padding-large" id="main">
+<!-- nav bar for small screens -->
+<div class="top hide-large" id="myNavbar">
+  <div class="bar black opacity hover-opacity-off center small">
+    <a href="#" class="bar-item button" style="width:25% !important">HOME</a>
+    <a href="#about" class="bar-item button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="bar-item button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="bar-item button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<div class="padding-large" id="main">
     <header class="h1 container padding-32 center black" id="HOME">
-        <h1 class="jumbo"><span class="hide-small">Derek</span> Madderom</h1>
+      
+      <h1 class="jumbo"><span class="hide-medium hide-small">Hello, I'm </span>Derek Madderom</h1>
+      <p style="font-size: 24px">Full Stack Web-Developer</p>
+      <img src="./Assets/images/Profile.jpg" alt="big boye">
     </header>
+
 </div>
 
 </body>
