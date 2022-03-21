@@ -49,10 +49,10 @@
 
 <!-- nav bar for small screens -->
 <nav class="top hide-large" id="myNavbar">
-  <div class="bar black opacity hover-opacity-off center small">
+  <div class="h3 bar black opacity hover-opacity-off center small">
     <a href="#" class="bar-item button" style="width:25% !important">HOME</a>
-    <a href="#about" class="bar-item button" style="width:25% !important">ABOUT</a>
-    <a href="#apps" class="bar-item button" style="width:25% !important">PHOTOS</a>
+    <a href="#about_mobile" class="bar-item button" style="width:25% !important">ABOUT</a>
+    <a href="#apps_mobile" class="bar-item button" style="width:25% !important">APPS</a>
     <a href="#contact" class="bar-item button" style="width:25% !important">CONTACT</a>
   </div>
 </nav>
@@ -62,8 +62,10 @@
   <header class="h1 container padding-32 center black" id="HOME">      
     <h1 class="jumbo"><span class="hide-medium hide-small">Hello, I'm </span>Derek Madderom</h1>
     <p style="font-size: 24px">Full Stack Web-Developer</p>
-    <img src="./Assets/images/Profile.jpg" style="width:50%" alt="big boye" class="hide-small hide-medium padding-64">
-    <img src="./Assets/images/Profile.jpg" style="width:100%" alt="big boye" class="hide-large padding-64">
+    <a href="https://www.linkedin.com/in/williamhgates/" style="color: inherit; text-decoration: none;" target="_blank">
+      <img src="./Assets/images/Profile.jpg" style="width:50%" alt="big boye" class="hide-small hide-medium padding-64">
+      <img src="./Assets/images/Profile.jpg" style="width:100%" alt="big boye" class="hide-large padding-64">
+    </a>
   </header>
 </section>
 
@@ -76,7 +78,7 @@
   <p class="h2 center padding-32 padding-center">I have been working on web development for a few years with a focus on front end web design. lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 </section>
 
-<section id="about" class="hide-large">
+<section id="about_mobile" class="hide-large">
   <header class="h1 center padding-64">
     ABOUT ME
   </header>
@@ -84,7 +86,7 @@
   <p class="h2 center">I have been working on web development for a few years with a focus on front end web design. lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 </section>
 
-<section class="center">
+<section class="center hide-small hide-medium">
   <header id="apps" class="h1 center padding-64">
     MY APPS
   </header>
@@ -95,28 +97,91 @@
     <figcaption><i class="ion-upload"></i>
       <h1 class="jumbo">Weather Buddy</h1>
       <h2 class="h2">HTML/JavaScript</h2>
-    </figcaption><a href="#"></a>
+    </figcaption><a href="https://www.linkedin.com/in/williamhgates/" target="_blank"></a>
   </figure>
 
   <br>
   
   <div class="row">
     <div class="container2">
-      <img src="./Assets/images/Tune Finder.png" style="width: 240px;" alt="Music Man" class="image column" >
+      <img src="./Assets/images/Tune Finder.png" style="width: 280px;" alt="Music Man" class="image column" >
+      
       <div class="overlay">
-        <div class="text">Tune Finder</div>
+        <div class="text h2"><a href="https://www.linkedin.com/in/williamhgates/" style="color: inherit; text-decoration: none;" target="_blank">Tune Finder</a></div>
       </div>
     </div>
 
     <div class="container2">
-      <img src="./Assets/images/Tune Finder.png" style="width: 240px;" alt="Music Man" class="image column" >
+      <img src="./Assets/images/Twitter API.png" style="width: 280px;" alt="Twitter Cityscape" class="image column" >
       <div class="overlay">
-        <div class="text">Tune Finder</div>
+        <div class="text h2"><a href="https://www.linkedin.com/in/williamhgates/" style="color: inherit; text-decoration: none;" target="_blank">BridgeWay Twitter API</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="container2">
+      <img src="./Assets/images/Skynet.png" style="width: 280px;" alt="Skynet Icon" class="image column" >
+      <div class="overlay">
+        <div class="text h2"><a href="https://www.linkedin.com/in/williamhgates/" style="color: inherit; text-decoration: none;" target="_blank">SKYNET</a></div>
+      </div>
+    </div>
+
+    <div class="container2">
+      <img src="./Assets/images/CloudGrocer.png" style="width: 280px;" alt="Basket of Groceries" class="image column" >
+      <div class="overlay">
+        <div class="text h2"><a href="https://www.linkedin.com/in/williamhgates/" style="color: inherit; text-decoration: none;" target="_blank">CloudGrocer</a></div>
       </div>
     </div>
   </div>
 
 </section>	
+
+<!--APPS section for mobile screens-->
+<section class="hide-large center" id="apps_mobile">
+  <header id="apps" class="h1 center padding-64">
+    MY APPS
+  </header>
+
+  <br>
+
+  <div>
+    <div class="container2">
+      <img src="./Assets/images/Weather Buddy.png" style="width: 280px;" alt="Weather App Phone" class="image column">
+      <div class="overlay">
+        <div class="text h2"><a href="https://www.linkedin.com/in/williamhgates/" style="color: inherit; text-decoration: none;" target="_blank">Weather Buddy</a></div>
+      </div>
+    </div>
+
+    <div class="container2">
+      <img src="./Assets/images/Tune Finder.png" style="width: 280px;" alt="Music Man" class="image column" >
+      <div class="overlay">
+        <div class="text h2"><a href="https://www.linkedin.com/in/williamhgates/" style="color: inherit; text-decoration: none;" target="_blank">Tune Finder</a></div>
+      </div>
+    </div>
+
+    <div class="container2">
+      <img src="./Assets/images/Twitter API.png" style="width: 280px;" alt="Twitter Cityscape" class="image column" >
+      <div class="overlay">
+        <div class="text h2"><a href="https://www.linkedin.com/in/williamhgates/" style="color: inherit; text-decoration: none;" target="_blank">BridgeWay Twitter API</a></div>
+      </div>
+    </div>
+  
+    <div class="container2">
+      <img src="./Assets/images/Skynet.png" style="width: 280px;" alt="Skynet Icon" class="image column" >
+      <div class="overlay">
+        <div class="text h2"><a href="https://www.linkedin.com/in/williamhgates/" style="color: inherit; text-decoration: none;" target="_blank">SKYNET</a></div>
+      </div>
+    </div>
+
+    <div class="container2">
+      <img src="./Assets/images/CloudGrocer.png" style="width: 280px;" alt="Basket of Groceries" class="image column" >
+      <div class="overlay">
+        <div class="text h2"><a href="https://www.linkedin.com/in/williamhgates/" style="color: inherit; text-decoration: none;" target="_blank">CloudGrocer</a></div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <br>
 
@@ -125,7 +190,7 @@
     <hr style="width:200px" class="opacity">
 
     <div class="section center">
-      <p><i class="fa fa-map-marker fa-fw large margin-right"></i> Chicago, US</p>
+      <p><i class="fa fa-map-marker fa-fw large margin-right"></i> Minneapolis, US</p>
       <p><i class="fa fa-phone fa-fw large margin-right"></i> Phone: +00 151515</p>
       <p><i class="fa fa-envelope fa-fw large margin-right"> </i> Email: mail@mail.com</p>
     </div><br>
